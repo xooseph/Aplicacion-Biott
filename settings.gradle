@@ -1,0 +1,2 @@
+include ':app', ':Devices', ':biott'
+rootProject.name='Biott'

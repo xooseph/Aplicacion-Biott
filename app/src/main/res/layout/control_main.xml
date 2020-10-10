@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/onButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/function_button"
+            android:onClick="clickON_OFF"
+            android:textOff="OFF"
+            android:textOn="ON"></ToggleButton>
+
+        <LinearLayout
+            android:id="@+id/linTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temporizador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporizador"
+                android:textSize="25sp" />
+
+            <Switch
+                android:id="@+id/swTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="switchTemp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/bMas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/linFunciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funciones"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/deviceelementbackground"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/functionTypeIcon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/boil" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/functionTypeIcon"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/functionName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Hervir agua"
+                            android:textColor="#000"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/functionType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Hervir"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/functionTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="04:00:00"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sigFuncion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/primary"
+                android:text="Siguiente Funcion"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:text="Temperatura: "
+                android:id="@+id/temperatura"
+                android:textSize="20sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/actualizarTemp"
+                android:text="Actualizar"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tBloqueo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/lock_button"
+            android:onClick="clickBloqueo"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+
+</ScrollView>
