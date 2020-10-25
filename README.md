@@ -1,4 +1,8 @@
-# Aplicacion-Biott <img align='center' src="app/src/main/res/drawable/logobiott.png" width="150">
+# Aplicacion-Biott
+
+<p align="center">
+   <img src="app/src/main/res/drawable/logobiott.png" width="300">
+</p>
 
 _Esta aplicación se elaboró como parte de **Proyecto Integrador** (Semestre 2019/2020-I) de la carrera de **Ingeniería en Mecatrónica** de la **Facultad de Ingeniería, UASLP**. La aplicación móvil, la cual se conecta a una tarjeta NodeMCU ESP8266 para operar una parrilla de inducción._
 
@@ -27,7 +31,9 @@ De igual forma, es necesario cargar el [código](nodeMCU) en la tarjeta NodeMCU 
 
 Antes de utilizar el dispositivo es necesario configurar la red a la cual se conectará el dispositivo, para esto, presiona sobre el ícono de ***biott*** que aparece en la parte inferior de la ventana principal de la aplicación. Aparecerá un menú, selecciona la opción ***Configuración*** y después ***Actualizar información WiFi***.
 
-![Img1](images/img1.jpg)
+<p align="center">
+   <img src="images/img1.jpg">
+</p>
 
 Verifica que tu dispositivo móvil esté conectado a la red WiFi que deseas configurar, pulsa el botón ***Agregar red WiFi*** e ingresa la contraseña.
 
@@ -47,4 +53,6 @@ Utilizando los botones ***+*** y ***-*** se puede configurar el tiempo que durar
 
 La aplicación cuenta con una serie de funciones predeterminadas, al presionar cualquiera de estas funciones, el dispositivo comenzará a funcionar durante el tiempo indicado. *Se recomienda bloquear el dispositivo para evitar cambios en la configuración mientras el dispositivo está en funcionamiento.*
 
-![Img2](images/img2.jpg)
+<p align="center">
+   <img src="images/img2.jpg">
+</p>
